@@ -1,0 +1,41 @@
+body {
+    font-family: Arial;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    background: red;
+    padding: 15px;
+}
+
+select, input {
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+}
+
+#filmPreview img {
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#paymentInfo img {
+    width: 200px;
+    margin-top: 10px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Bioskop Mini</title>
+<link rel="stylesheet" href="bioskop.css">
+</head>
+<body>
+
+<h1>🎬 Bioskop Mini</h1>
+
+<!-- PILIH FILM -->
+<h2>Pilih Film</h2>
+<select id="filmSelect" onchange="updateFilm()">
+    <option value="">-- Pilih Film --</option>
+    <option value="">-- Horor --</option>
+    <option value="1. The Pope's Exorcist (2023)" data-price="10.000" data-img="c:\Users\Andri\Documents\index.html\keyla.images.jfif/200">1. The Pope's Exorcist (2023) - Rp10.000</option>
+    <option value="2. We Have a Ghost (2023)" data-price="10.000" data-img="https://via.placeholder.com/200">2. We Have a Ghost (2023) - Rp10.000</option>
+    <option value="3. Zom 100: Bucket List of the Dead (2023)" data-price="10.000" data-img="https://via.placeholder.com/200">3. Zom 100: Bucket List of the Dead (2023) - Rp10.000</option>
+<option value="">-- Kartun --</option>
+    <option value="1. KPop Demon Hunters (2025)" data-price="10.000" data-img="c:\Users\Andri\Pictures\myfather.jpg">1. KPop Demon Hunters (2025) - Rp10.000</option>
+    <option value="2. The Mitchells vs. The Machines (2021)" data-price="10.000" data-img="https://via.placeholder.com/200">2. The Mitchells vs. The Machines (2021) - Rp10.000</option>
+    <option value="3. Robin Robin (2021)" data-price="10.000" data-img="https://via.placeholder.com/200">3. Robin Robin (2021)- Rp10.000</option>
+    <option value="4. The Sea Beast (2022)" data-price="10.000" data-img="https://via.placeholder.com/200">4. The Sea Beast (2022) - Rp10.000</option>
+    <option value="5. My Father’s Dragon" data-price="10.000" data-img="https://via.placeholder.com/200">5. My Father’s Dragon - Rp10.000</option>
+
+
+</select>
+
+<div id="filmPreview"></div>
+
+<!-- JUMLAH -->
+<h2>Jumlah Penonton</h2>
+<input type="number" id="jumlah" min="1" placeholder="Masukkan jumlah orang">
+
+<!-- PEMBAYARAN -->
+<h2>Pembayaran</h2>
+<select id="paymentMethod" onchange="showPaymentInfo()">
+    <option value="">-- Pilih --</option>
+    <option value="ewallet">E-Wallet</option>
+    <option value="bank">Bank Transfer</option>
+    <option value="qris">QRIS</option>
+    <option value="cash">Cash</option>
+</select>
+
+<div id="paymentInfo"></div>
+
+<br>
+<button onclick="bookTicket()">Booking Tiket</button>
+
+<div id="result"></div>
+
+<script src="bioskop.js"></script>
+</body>
+</html>
